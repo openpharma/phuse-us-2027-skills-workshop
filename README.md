@@ -1,4 +1,4 @@
-# Skills, Not Prompts: Building and Open-Sourcing AI Agent Skills from SAP to TFL
+Building and Open-Sourcing AI Agent Skills from SAP to TFL
 
 A 90-minute, mostly hands-on PHUSE US workshop for statistical programmers working with SDTM, ADaM, and TFLs. Participants use a Posit-hosted Positron instance with Posit Assistant to build a traceable SAP-to-table workflow using harness-agnostic Agent Skills.
 
