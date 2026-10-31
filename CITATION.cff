@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this workshop, please cite it and its upstream resources."
+title: "Skills, Not Prompts: Building and Open-Sourcing AI Agent Skills from SAP to TFL"
+type: software
+authors:
+  - family-names: "[Your name]"
+    given-names: "[Your name]"
+    affiliation: "openpharma"
+version: 0.1.0
+date-released: 2026-10-31
+license: MIT
+repository-code: "https://github.com/openpharma/phuse-us-2027-skills-workshop"
+abstract: >-
+  A 90-minute hands-on workshop for clinical statistical programmers about
+  portable AI agent skills and traceable SAP-to-TFL workflows using R and
+  pharmaverse packages.
+references:
+  - type: repository
+    title: "RConsortium/pharma-skills"
+    authors:
+      - name: "R Consortium Submissions Working Group Pilot 7 and BBSW AI committee"
+    url: "https://github.com/RConsortium/pharma-skills"
+    license: MIT
+  - type: repository
+    title: "R/Pharma 2026: Hands-On AI Skills for Clinical Programming & Biostatistics"
+    authors:
+      - family-names: Dickinson
+        given-names: Jeff
+      - family-names: Zhang
+        given-names: Eric
+    url: "https://github.com/jeffreyad/rpharma-2026-workshop"
+  - type: repository
+    title: "Posit Agent Skills"
+    authors:
+      - name: "Posit PBC"
+    url: "https://github.com/posit-dev/skills"
+    license: MIT
+  - type: generic
+    title: "Agent Skills specification"
+    url: "https://agentskills.io/specification.md"
