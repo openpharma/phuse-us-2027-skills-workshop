@@ -9,17 +9,15 @@ Pinned commit: `e5db96d54ef5a79cbfd06e2339a3351e4583f8da`
 License: MIT  
 Copyright holder stated in the upstream skill license: Jeff Dickinson, Navitas Data Sciences.
 
-| Local file (after sync) | Upstream path |
-| --- | --- |
-| `.agents/skills/admiral-adsl/references/admiral-SKILL.md` | `admiral/SKILL.md` |
-| `.agents/skills/admiral-adsl/SKILL.md` | `admiral/admiral-adsl/SKILL.md` |
-| `.agents/skills/admiral-adsl/DESIGN.md` | `admiral/admiral-adsl/DESIGN.md` |
-| `.agents/skills/admiral-adsl/LICENSE` | `admiral/admiral-adsl/LICENSE` |
-| `.agents/skills/admiral-adsl/UPSTREAM-README.md` | `admiral/admiral-adsl/README.md` |
-| `.agents/skills/admiral-adsl/benchmarks/*` | `admiral/admiral-adsl/benchmarks/*` |
-| `.agents/skills/admiral-adsl/references/*` | `admiral/admiral-adsl/references/*` |
+| Local file (after sync) | Upstream repository | Upstream path | Pinned commit | License | Copyright holder |
+| --- | --- | --- | --- | --- | --- |
+| `.agents/skills/admiral-adsl/references/admiral-SKILL.md` | `RConsortium/pharma-skills` | `admiral/SKILL.md` | `e5db96d54ef5a79cbfd06e2339a3351e4583f8da` | MIT | Jeff Dickinson, Navitas Data Sciences |
+| `.agents/skills/admiral-adsl/SKILL.md` | `RConsortium/pharma-skills` | `admiral/admiral-adsl/SKILL.md` | `e5db96d54ef5a79cbfd06e2339a3351e4583f8da` | MIT | Jeff Dickinson, Navitas Data Sciences |
+| `.agents/skills/admiral-adsl/DESIGN.md` | `RConsortium/pharma-skills` | `admiral/admiral-adsl/DESIGN.md` | `e5db96d54ef5a79cbfd06e2339a3351e4583f8da` | MIT | Jeff Dickinson, Navitas Data Sciences |
+| `.agents/skills/admiral-adsl/LICENSE` | `RConsortium/pharma-skills` | `admiral/admiral-adsl/LICENSE` | `e5db96d54ef5a79cbfd06e2339a3351e4583f8da` | MIT | Jeff Dickinson, Navitas Data Sciences |
+| `.agents/skills/admiral-adsl/UPSTREAM-README.md` | `RConsortium/pharma-skills` | `admiral/admiral-adsl/README.md` | `e5db96d54ef5a79cbfd06e2339a3351e4583f8da` | MIT | Jeff Dickinson, Navitas Data Sciences |
 
-The wildcard rows are expanded into one entry per file by the sync script. No files or text from `jeffreyad/rpharma-2026-workshop` are included.
+`tools/sync_upstream.R` adds a separate row for every benchmark, reference, and other file in the pinned source directory. No files or text from `jeffreyad/rpharma-2026-workshop` are included.
 
 ## Upstream MIT license
 

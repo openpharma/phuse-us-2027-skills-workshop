@@ -1,0 +1,30 @@
+- sap_id: SAP-9.2
+  population: Intent-to-Treat
+  population_flag: ITTFL
+  datasets:
+    - ADSL
+  variables:
+    - ADSL.USUBJID
+    - ADSL.ARM
+    - ADSL.AGE
+    - ADSL.SEX
+    - ADSL.RACE
+    - ADSL.ITTFL
+  shell_id: T-14.1.1
+  output_id: T-14.1.1
+  rationale: "SAP-9.2 specifies the ITT population and demographics variables; the shell carries this SAP and output ID."
+- sap_id: SAP-14.3.1
+  population: Safety
+  population_flag: SAFFL
+  datasets:
+    - ADAE
+  variables:
+    - ADAE.USUBJID
+    - ADAE.ARM
+    - ADAE.SAFFL
+    - ADAE.TRTEMFL
+    - ADAE.AESOC
+    - ADAE.AEDECOD
+  shell_id: T-14.3.1
+  output_id: T-14.3.1
+  rationale: "SAP-14.3.1 specifies the safety population, treatment-emergent events, and SOC/PT summary; the shell combines the overall and SOC/PT sections."

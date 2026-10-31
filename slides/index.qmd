@@ -1,0 +1,106 @@
+---
+title: "Skills, Not Prompts"
+subtitle: "Building and Open-Sourcing AI Agent Skills from SAP to TFL"
+author: "PHUSE US 2027 workshop team"
+format:
+  revealjs:
+    slide-number: true
+    footer: "Built on: RConsortium/pharma-skills · posit-dev/skills · Agent Skills · pharmaverse"
+    theme: default
+    transition: none
+---
+
+# Skills, Not Prompts
+
+## Building and Open-Sourcing AI Agent Skills from SAP to TFL
+
+PHUSE US · 2027
+
+::: notes
+Welcome participants. Confirm Positron and Posit Assistant access and explain that all examples are synthetic.
+:::
+
+## Credits
+
+- **RConsortium/pharma-skills** — R Consortium Submissions Working Group Pilot 7 with BBSW AI committee; source of the MIT-licensed vendored `admiral` skill.
+- **Jeff Dickinson and Eric Zhang** — R/Pharma 2026 workshop format inspiration; linked, not copied.
+- **posit-dev/skills** — progressive-disclosure and concise-skill authoring conventions (MIT).
+- **Agent Skills specification**, pharmaverse packages, and **CDISC Pilot 01** — portable skill format, analysis tools, and synthetic study-design model.
+
+See repository `README.md` and `NOTICE.md` for full attributions, licenses, and the pinned upstream commit.
+
+::: notes
+State clearly that this workshop builds on prior open-source work. The R/Pharma workshop is credited by link only; its license is still to be checked before any reuse.
+:::
+
+## 5 min — Welcome and responsible use
+
+- Skills preserve reusable workflows; prompts describe one-off requests.
+- Today's examples are synthetic and for training only.
+- Human review and independent QC remain essential.
+
+::: notes
+Set expectations: the workshop does not validate AI outputs or replace protocol interpretation.
+:::
+
+## 10 min — Agent Skills in Positron
+
+- Open standard: YAML frontmatter plus portable `SKILL.md`.
+- Posit Assistant in the hosted Positron instance.
+- Same skill structure can be used in GitHub Copilot and Claude Code.
+
+::: notes
+Show the skill directory and explain why task instructions belong in small, reviewable files.
+:::
+
+## 15 min — Lab 1: derive ADSL
+
+- Use the `admiral-adsl` skill.
+- Repeat with the skill disabled.
+- Compare checks, assumptions, and traceability.
+
+::: notes
+Ask participants to identify protocol-specific decisions that the skill should not make on its own.
+:::
+
+## 25 min — Lab 2: SAP to TFL
+
+SAP → analysis spine → ADSL/ADAE → ARD → mock TFL
+
+- Keep exact `sap_id`, `shell_id`, and `output_id`.
+- Filter each analysis by the declared population flag.
+- Ask rather than guess when the SAP is ambiguous.
+
+::: notes
+Walk one table end-to-end. Use `# REVIEW:` markers wherever a protocol decision needs a qualified reviewer.
+:::
+
+## 20 min — Lab 3: author and benchmark a skill
+
+- Start from the workshop template or Posit Assistant `create-skill`.
+- Add a prompt, expected behavior, and scoring rubric.
+- Add credits and review licenses before sharing.
+
+::: notes
+Emphasize progressive disclosure: keep SKILL.md under 500 lines and move detailed reference material to references/.
+:::
+
+## 10 min — Open licensing and discussion
+
+- Separate original content from vendored material.
+- Preserve upstream licenses and file-level attribution.
+- Contribute general improvements to upstream projects.
+
+::: notes
+Review the README, NOTICE, CITATION.cff, and UPSTREAM.md. Do not copy R/Pharma 2026 files or text unless its license has been checked and reuse is permitted.
+:::
+
+## 5 min — Wrap-up
+
+- One workflow improvement to take back to your team?
+- One question that always requires human review?
+- TODO: add final workshop, slide, and Posit instance links.
+
+::: notes
+Invite follow-up, point to the repository TODO list, and reiterate the GxP QC disclaimer.
+:::

@@ -7,7 +7,6 @@ authors:
     given-names: "[Your name]"
     affiliation: "openpharma"
 version: 0.1.0
-date-released: 2026-10-31
 license: MIT
 repository-code: "https://github.com/openpharma/phuse-us-2027-skills-workshop"
 abstract: >-
@@ -15,13 +14,13 @@ abstract: >-
   portable AI agent skills and traceable SAP-to-TFL workflows using R and
   pharmaverse packages.
 references:
-  - type: repository
+  - type: software
     title: "RConsortium/pharma-skills"
     authors:
       - name: "R Consortium Submissions Working Group Pilot 7 and BBSW AI committee"
     url: "https://github.com/RConsortium/pharma-skills"
     license: MIT
-  - type: repository
+  - type: software
     title: "R/Pharma 2026: Hands-On AI Skills for Clinical Programming & Biostatistics"
     authors:
       - family-names: Dickinson
@@ -29,12 +28,15 @@ references:
       - family-names: Zhang
         given-names: Eric
     url: "https://github.com/jeffreyad/rpharma-2026-workshop"
-  - type: repository
+  - type: software
     title: "Posit Agent Skills"
     authors:
       - name: "Posit PBC"
     url: "https://github.com/posit-dev/skills"
     license: MIT
-  - type: generic
+  - type: software
     title: "Agent Skills specification"
     url: "https://agentskills.io/specification.md"
+    authors:
+      - name: "Anthropic, PBC"
+    license: CC-BY-4.0
