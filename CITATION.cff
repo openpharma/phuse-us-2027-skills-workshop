@@ -1,11 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this workshop, please cite it and its upstream resources."
-title: "Skills, Not Prompts: Building and Open-Sourcing AI Agent Skills from SAP to TFL"
+title: "Building and Open-Sourcing AI Agent Skills from SAP to TFL"
 type: software
 authors:
-  - family-names: "[Your name]"
-    given-names: "[Your name]"
-    affiliation: "openpharma"
+  - family-names: "Black"
+    given-names: "James"
+  - family-names: Dickinson
+    given-names: Jeff
+  - family-names: Parmar
+    given-names: Sam
+  - family-names: Kehlkohff
+    given-names: Doug
 version: 0.1.0
 license: MIT
 repository-code: "https://github.com/openpharma/phuse-us-2027-skills-workshop"
