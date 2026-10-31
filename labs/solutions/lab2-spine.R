@@ -51,13 +51,16 @@ age_ard <- cards::ard_summary(
 )
 sex_ard <- cards::ard_tabulate(data = adsl_itt, by = "ARM", variables = "SEX")
 race_ard <- cards::ard_tabulate(data = adsl_itt, by = "ARM", variables = "RACE")
-saveRDS(list(age = age_ard, sex = sex_ard, race = race_ard), "outputs/lab2-demographics-ard.rds")
+demog_ard <- cards::bind_ard(age_ard, sex_ard, race_ard)
+saveRDS(demog_ard, "outputs/lab2-demographics-ard.rds")
 
-demog_table <- gtsummary::tbl_summary(
-  data = adsl_itt,
+demog_table <- gtsummary::tbl_ard_summary(
+  cards = demog_ard,
   by = ARM,
-  include = c(AGE, SEX, RACE),
-  statistic = list(AGE ~ "{mean} ({sd})", gtsummary::all_categorical() ~ "{n} ({p}%)")
+  statistic = list(
+    gtsummary::all_continuous() ~ "{mean} ({sd})",
+    gtsummary::all_categorical() ~ "{n} ({p}%)"
+  )
 ) |>
   gtsummary::as_tibble()
 write.csv(demog_table, file.path("outputs", paste0(demog$output_id, ".csv")), row.names = FALSE)
