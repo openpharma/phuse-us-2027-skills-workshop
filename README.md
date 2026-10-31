@@ -1,19 +1,6 @@
 Building and Open-Sourcing AI Agent Skills from SAP to TFL
 
-A 90-minute, mostly hands-on PHUSE US workshop for statistical programmers working with SDTM, ADaM, and TFLs. Participants use a Posit-hosted Positron instance with Posit Assistant to build a traceable SAP-to-table workflow using harness-agnostic Agent Skills.
-
-## Credits & Acknowledgements
-
-This workshop builds on open-source work and standards; it does not present upstream skills or conventions as original work.
-
-- **RConsortium/pharma-skills** ([repository](https://github.com/RConsortium/pharma-skills)) is the R Consortium Submissions Working Group Pilot 7, a joint effort with the BBSW AI committee, and the source of the vendored `admiral` skills. The upstream skill is MIT-licensed; see [NOTICE.md](NOTICE.md) for the pinned revision, file-level attribution, and license text.
-- **Jeff Dickinson, PhD (Navitas Data Sciences), and Eric Zhang, PhD (Eikon Therapeutics)** created the R/Pharma 2026 workshop “Hands-On AI Skills for Clinical Programming & Biostatistics” (1 October 2026): [source repository](https://github.com/jeffreyad/rpharma-2026-workshop) · [slides](https://jeffreyad.github.io/rpharma-2026-workshop/). This is a link-only credit for inspiration on workshop format; no files or text from that workshop are copied here. Its license is **not yet verified**; **TODO:** Check that repository's `LICENSE` before considering any reuse.
-- **Posit PBC / posit-dev/skills** ([repository](https://github.com/posit-dev/skills), MIT license) informed our skill-authoring conventions, including progressive disclosure via `references/` and keeping `SKILL.md` under 500 lines.
-- **Anthropic, PBC's Agent Skills open specification** ([specification](https://agentskills.io/specification.md); specification documentation CC-BY-4.0, repository code Apache-2.0) defines the portable `SKILL.md` format used here; this project implements the format and does not vendor specification text.
-- **pharmaverse and package maintainers** provide the R packages used or discussed: [{admiral}](https://github.com/pharmaverse/admiral) (Apache-2.0), [{pharmaversesdtm}](https://github.com/pharmaverse/pharmaversesdtm) (Apache-2.0), [{pharmaverseadam}](https://github.com/pharmaverse/pharmaverseadam) (Apache-2.0), [{metacore}](https://github.com/atorus-research/metacore) (Atorus Research, MIT), [{cards}](https://github.com/pharmaverse/cards) and [{cardx}](https://github.com/pharmaverse/cardx) (Apache-2.0), [{gtsummary}](https://github.com/ddsjoberg/gtsummary) (Daniel Sjoberg and contributors, MIT), and [{yaml}](https://github.com/r-lib/yaml) (r-lib, BSD-3-Clause). These licenses apply to their respective packages; no package source code is vendored here.
-- **CDISC** ([Pilot 01 study design](https://www.cdisc.org/), xanomeline versus placebo) is the model for the clearly synthetic training SAP. No participant-level data or source text are included; the source materials are subject to CDISC's terms and licensing, which must be reviewed before reuse.
-
-This workshop extends ADaM derivation into an SAP-to-TFL spine and adds a skill-authoring lab and an open-licensing discussion.
+A 90-minute, mostly hands-on PHUSE US 2027 workshop for statistical programmers working with SDTM, ADaM, and TFLs. Participants use a Posit-hosted Positron instance with Posit Assistant to build a traceable SAP-to-table workflow using harness-agnostic Agent Skills.
 
 ## Learning objectives
 
@@ -57,14 +44,19 @@ For offline fallback, use the synthetic SAP at `study/sap/sap_excerpt.md`, the s
 
 All examples are synthetic and for training only. AI-generated code, derivations, and tables must be independently reviewed, validated, and QC'd by qualified personnel before any GxP use. Nothing in this workshop is validated for production or regulatory submission.
 
+## Credits & Acknowledgements
+
+This workshop builds on open-source work and standards; it does not present upstream skills or conventions as original work.
+
+- **RConsortium/pharma-skills** ([repository](https://github.com/RConsortium/pharma-skills)) is the R Consortium Submissions Working Group Pilot 7, a joint effort with the BBSW AI committee, and the source of the vendored `admiral` skills. The upstream skill is MIT-licensed; see [NOTICE.md](NOTICE.md) for the pinned revision, file-level attribution, and license text.
+- **Jeff Dickinson, PhD (Navitas Data Sciences), and Eric Zhang, PhD (Eikon Therapeutics)** created the R/Pharma 2026 workshop “Hands-On AI Skills for Clinical Programming & Biostatistics” (1 October 2026): [source repository](https://github.com/jeffreyad/rpharma-2026-workshop) · [slides](https://jeffreyad.github.io/rpharma-2026-workshop/). 
+- **Posit PBC / posit-dev/skills** ([repository](https://github.com/posit-dev/skills), MIT license) informed our skill-authoring conventions, including progressive disclosure via `references/` and keeping `SKILL.md` under 500 lines.
+- **Anthropic's Agent Skills open specification** ([specification](https://agentskills.io/specification.md); specification documentation CC-BY-4.0, repository code Apache-2.0) defines the portable `SKILL.md` format used here; this project implements the format and does not vendor specification text.
+- **pharmaverse and package maintainers** provide the R packages used or discussed: [{admiral}](https://github.com/pharmaverse/admiral) (Apache-2.0), [{pharmaversesdtm}](https://github.com/pharmaverse/pharmaversesdtm) (Apache-2.0), [{pharmaverseadam}](https://github.com/pharmaverse/pharmaverseadam) (Apache-2.0), [{metacore}](https://github.com/atorus-research/metacore) (Atorus Research, MIT), [{cards}](https://github.com/pharmaverse/cards) and [{cardx}](https://github.com/pharmaverse/cardx) (Apache-2.0), [{gtsummary}](https://github.com/ddsjoberg/gtsummary) (Daniel Sjoberg and contributors, MIT), and [{yaml}](https://github.com/r-lib/yaml) (r-lib, BSD-3-Clause). These licenses apply to their respective packages; no package source code is vendored here.
+- **CDISC** ([Pilot 01 study design](https://www.cdisc.org/), xanomeline versus placebo) is the model for the clearly synthetic training SAP. No participant-level data or source text are included; the source materials are subject to CDISC's terms and licensing, which must be reviewed before reuse.
+
+This workshop extends ADaM derivation into an SAP-to-TFL spine and adds a skill-authoring lab and an open-licensing discussion.
+
 ## License
 
 The MIT license in [LICENSE](LICENSE) covers only original workshop content. Third-party material retains its own terms; see [NOTICE.md](NOTICE.md) and the license files in the relevant skill directories.
-
-## TODOs before delivery
-
-- Replace `[Your name]` in `LICENSE` with the workshop copyright holder.
-- Set the delivery date, add final facilitator/speaker details, and add the monitored Code of Conduct contact.
-- Review and confirm the pinned `pharma-skills` commit in `tools/sync_upstream.R` and rerun the sync if it changes.
-- Check the R/Pharma 2026 repository's `LICENSE`; do not reuse its files or text without permission.
-- Add final slide, Posit instance, and workshop registration links where marked in the materials.
