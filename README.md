@@ -40,6 +40,14 @@ For offline fallback, use the synthetic SAP at `study/sap/sap_excerpt.md`, the s
 - `slides/index.qmd` — concise Quarto RevealJS deck skeleton.
 - `tools/sync_upstream.R` — pinned, reproducible import of upstream skill material and attribution notices.
 
+## Facilitators
+
+- James Black (@epijim), Novartis
+- Doug Kelkhoff (dgkf), Domino Data Labs
+- Phil Bowsher (philbowsher), Posit
+- Jeff Dickinson (jeffreyad), Navitas Life Sciences
+- Sam Parmar (parmsam), Pfizer
+
 ## Safety and scope
 
 All examples are synthetic and for training only. AI-generated code, derivations, and tables must be independently reviewed, validated, and QC'd by qualified personnel before any GxP use. Nothing in this workshop is validated for production or regulatory submission.
